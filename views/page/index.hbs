@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sales info</title>
+    <link rel='stylesheet' href='/stylesheets/sales.css' />
+</head>
+<body>
+    <h1>Sales Data</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Invoice ID</th>
+                <th>Branch</th>
+               <th>City</th>
+               <th>Customer type</th>
+               <th>Product line</th>
+               <th>name</th>
+               <th>image</th>
+               <th>Unit Price</th>
+               <th>Quantity</th>
+               <th>Tax 5%</th>
+               <th>Total</th>
+               <th>Date</th>
+               <th>Time</th>
+               <th>Payment</th>
+               <th>Cogs</th>
+               <th>Gross Income</th>
+               <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr> 
+                <td>{{data1.[Invoice ID]}}</td>
+                <td>{{data1.Branch}}</td>
+                <td>{{data1.City}}</td>
+                <td>{{data1.[Customer type]}}</td>
+                <td>{{data1.[Product line]}}</td>
+                <td>{{data1.name}}</td>
+                <td> <img src="{{data1.image}}" alt="image" height="40px" width="40px"></td>
+                <td>{{data1.[Unit price]}}</td>
+                <td>{{data1.Quantity}}</td>
+                <td>{{data1.[Tax 5%]}}</td>
+                <td>{{data1.Total}}</td>
+                <td>{{data1.Date}}</td>
+                <td>{{data1.Time}}</td>
+                <td>{{data1.Payment}}</td>
+                <td>{{data1.cogs}}</td>
+                <td>{{data1.[gross income]}}</td>
+                <td>{{data1.Rating}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

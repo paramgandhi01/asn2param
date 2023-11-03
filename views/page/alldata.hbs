@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sales info</title>
+    <link rel='stylesheet' href='/stylesheets/sales.css' />
+</head>
+<body>
+    <h1>car sales</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>InvoiceNo</th>
+                <th>Manufacturer</th>
+               <th>Model</th>
+               <th>Sales(in k's)</th>
+               <th> year resale value</th>
+               <th>Vehicle_type</th>
+               <th>Price(in k's)</th>
+               <th>Engine_size</th>
+               <th>Horsepower</th>
+               <th>Wheelbase</th>
+               <th>Width</th>
+               <th>Length</th>
+               <th>Curb_weight</th>
+               <th>Fuel_capacity</th>
+               <th>Fuel_efficiency</th>
+               <th>Latest_Launch</th>
+               <th>Power_perf_factor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each jsonData.carSales}}
+           <tr> 
+                <td>{{Manufacturer}}</td>
+                <td>{{InvoiceNo}}</td>
+                <td>{{Model}}</td>
+                <td>{{Sales_in_thousands}}</td>
+                <td>{{__year_resale_value}}</td>
+                <td>{{Vehicle_type}}</td>
+                <td>{{Price_in_thousands}}</td>
+                <td>{{Engine_size}}</td>
+                <td>{{Horsepower}}</td>
+                <td>{{Wheelbase}}</td>
+                <td>{{Width}}</td>
+                <td>{{Length}}</td>
+                <td>{{Curb_weight}}</td>
+                <td>{{Fuel_capacity}}</td>
+                <td>{{Fuel_efficiency}}</td>
+                <td>{{Latest_Launch}}</td>
+                <td>{{Power_perf_factor}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+</html>
